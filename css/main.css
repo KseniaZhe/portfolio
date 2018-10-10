@@ -1,0 +1,203 @@
+/* ---- coming soon page ---- */
+
+body {
+  font-family: "Tenor Sans", sans-serif;
+}
+
+p {
+  font-family: Cabin, sans-serif;
+}
+
+.social-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.tena {
+  line-height: 0.85;
+}
+
+.zetta,
+.yotta {
+  line-height: 0.95;
+}
+
+.email-link {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+}
+
+.email-link:hover {
+    margin-left: 1.2em;
+    padding: .5em 10em .5em .5em;
+    color: #fff;
+    background-color: #e52e6b;
+    border-bottom: solid #e52e6b 40px;
+}
+
+.cover {
+  background: url("../images/cover-coming.jpg") no-repeat left top / cover;
+  min-height: 100vh;
+}
+
+.icon-social {
+  height: 36px;
+  width: 36px;
+}
+
+/* .social-icon-t {
+  transition: all 0.3s ease-out;
+}
+
+.social-icon-in {
+  transition: all 0.3s ease-out;
+}
+
+.social-icon-f {
+  transition: all 0.3s ease-out;
+}
+
+.social-icon-f:hover {
+  border-bottom: solid #e52e6b 5px;
+}
+
+.social-icon-in:hover {
+  border-bottom: solid #e52e6b 5px;
+}
+
+.social-icon-t:hover {
+  border-bottom: solid #e52e6b 5px;
+} */
+
+.caps {
+  text-transform: uppercase;
+}
+
+.bio {
+  border-left: solid #e52e6b 3px;
+  padding-left: .5em;
+}
+
+ .helo {
+  transition: all 0.35s ease-out;
+}
+
+.business-card-bio:hover .helo {
+  color: #e52e6b;
+  margin: 0 .1em;
+}
+
+.ll {
+  display: none;
+  color: #e52e6b;
+  transition: all 1s ease-out;
+}
+
+.business-card-bio:hover .ll {
+  display: inline;
+}
+
+/* ---- home page ---- */
+
+.i-logo {
+  width: 110px;
+  height: 52px
+}
+
+.nav-bar {
+  background-color: #121221;
+  min-height: 70px;
+}
+
+.work-card-1 {
+  background-color: #121221;
+}
+
+.work-card-2,
+.work-card-3,
+.work-card-4,
+.work-card-5,
+.work-card-6 {
+  background-color: #121221;
+}
+
+.card-link-on-dark,
+.card-link-on-light {
+  text-decoration: none;
+}
+
+.card-link-on-dark:hover {
+  cursor: pointer;
+}
+
+.card-link-on-light:hover {
+  cursor: pointer;
+}
+
+.card-link-on-dark .work-card-title{
+  color: #fff;
+  border-left: solid 0 #e52e6b;
+  transition: all 0.5s ease-out;
+}
+
+.card-link-on-dark:hover .work-card-title {
+  border-left: solid 50px #e52e6b;
+}
+
+.card-link-on-light .work-card-title{
+  color: #fff;
+  border-left: solid 0 #e52e6b;
+  transition: all 0.5s ease-out;
+}
+
+.card-link-on-light:hover .work-card-title {
+  border-left: solid 60px #e52e6b;
+}
+
+.banner {
+  min-height: 500px;
+  background: url("") no-repeat 10% center / cover;
+}
+
+.cabin {
+  font-family: Cabin, sans-serif;
+}
+
+.pink {
+  color: #e52e6b
+}
+
+
+.minh-252px {
+  min-height: 252px;
+}
+
+footer {
+  background: url("../images/cover-coming.jpg") no-repeat left top / cover;
+  min-height: 100px;
+}
+
+/* ---- branding page ---- */
+
+.banner-branding {
+  background: url("../images/cover-coming-2.jpg") no-repeat left top / cover;
+  min-height: 450px;
+}
+
+.max-length-l {
+  max-width: 36em;
+  width: 100%;
+}
+
+.email-link-footer {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.by {
+  color: white;
+  font-family: "Tenor Sans", sans-serif;
+}
