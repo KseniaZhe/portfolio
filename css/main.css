@@ -8,6 +8,22 @@ p {
   font-family: Cabin, sans-serif;
 }
 
+h2 {
+  letter-spacing: -.04em;
+}
+
+.kern-tight {
+  letter-spacing: -.08em;
+}
+
+.kern-tight-2 {
+  letter-spacing: -.11em;
+}
+
+.kern-tight-half {
+  letter-spacing: -.06em;
+}
+
 .social-list {
   list-style-type: none;
   padding-left: 0;
