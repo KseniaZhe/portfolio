@@ -198,8 +198,8 @@ footer {
 /* ---- branding page ---- */
 
 .banner-branding {
-  background: url("../images/cover-coming-2.jpg") no-repeat left top / cover;
-  min-height: 450px;
+  background: url("../images/banner-compactmusic.jpg") no-repeat center center / cover;
+  min-height: 350px;
 }
 
 .max-length-l {
@@ -216,4 +216,36 @@ footer {
 .by {
   color: white;
   font-family: "Tenor Sans", sans-serif;
+}
+
+.embed-778 {
+  padding-top: 77.8%;
+}
+
+.embed-1186 {
+  padding-top: 118.6%;
+}
+
+@media only screen and (min-width: 25em) {
+
+  .hidden-s {
+    display: none;
+  }
+
+  .hidden-m {
+    display: inline-block;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  .hidden-s {
+    display: inline-block;;
+  }
+
+  .hidden-m {
+    display: none;
+  }
+
 }
