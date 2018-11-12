@@ -172,10 +172,10 @@ h2 {
   border-left: solid 60px #e52e6b;
 }
 
-.banner {
+/* .banner {
   min-height: 500px;
   background: url("") no-repeat 10% center / cover;
-}
+} */
 
 .cabin {
   font-family: Cabin, sans-serif;
@@ -198,7 +198,12 @@ footer {
 /* ---- branding page ---- */
 
 .banner-branding {
-  background: url("../images/banner-compactmusic.jpg") no-repeat center center / cover;
+  background: url("../images/branding-compactmusic-banner.jpg") no-repeat center center / cover;
+  min-height: 350px;
+}
+
+.banner-home {
+  background: url("../images/banner-home-colour.jpg") no-repeat left center / cover;
   min-height: 350px;
 }
 
@@ -226,26 +231,39 @@ footer {
   padding-top: 118.6%;
 }
 
-@media only screen and (min-width: 25em) {
+.embed-522 {
+  padding-top: 52.2%;
+}
 
-  .hidden-s {
-    display: none;
-  }
+.embed-453 {
+  padding-top: 45.35%;
+}
 
-  .hidden-m {
-    display: inline-block;
-  }
+.hidden-s {
+  display: none;
+}
 
+.hidden-m {
+  display: inline-block;
 }
 
 @media only screen and (min-width: 38em) {
 
   .hidden-s {
-    display: inline-block;;
+    display: inline-block;
   }
 
   .hidden-m {
     display: none;
   }
 
+}
+
+.work-card-1 {
+  background-color: #d50e8b;
+}
+
+.logo-home {
+  height: 8.22em;
+  width: 18em;
 }
