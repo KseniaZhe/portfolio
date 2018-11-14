@@ -207,6 +207,11 @@ footer {
   min-height: 350px;
 }
 
+.banner-app {
+  background: url("../images/app-hooray-banner.jpg") no-repeat center center / cover;
+  min-height: 350px;
+}
+
 .banner-home {
   background: url("../images/banner-home-colour.jpg") no-repeat left center / cover;
   min-height: 350px;
@@ -214,6 +219,11 @@ footer {
 
 .max-length-l {
   max-width: 36em;
+  width: 100%;
+}
+
+.max-length-l2 {
+  max-width: 42em;
   width: 100%;
 }
 
@@ -290,4 +300,20 @@ footer {
   margin-right: auto;
   max-width: 60em;
   width: 100%;
+}
+
+.tight {
+  line-height: 1.1;
+}
+
+.embed-17786 {
+  padding-top: 177.86%;
+}
+
+.embed-8034 {
+  padding-top: 80.34%;
+}
+
+.work-card-3 {
+  background-color: #ff5201
 }
