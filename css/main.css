@@ -154,22 +154,22 @@ h2 {
 
 .card-link-on-dark .work-card-title{
   color: #fff;
-  border-left: solid 0 #e52e6b;
+  border-left: solid 0 #68d7d4;
   transition: all 0.5s ease-out;
 }
 
 .card-link-on-dark:hover .work-card-title {
-  border-left: solid 50px #e52e6b;
+  border-left: solid 50px #68d7d4;
 }
 
 .card-link-on-light .work-card-title{
   color: #fff;
-  border-left: solid 0 #e52e6b;
+  border-left: solid 0 #68d7d4;
   transition: all 0.5s ease-out;
 }
 
 .card-link-on-light:hover .work-card-title {
-  border-left: solid 60px #e52e6b;
+  border-left: solid 60px #68d7d4;
 }
 
 /* .banner {
@@ -191,7 +191,7 @@ h2 {
 }
 
 footer {
-  background: url("../images/cover-coming.jpg") no-repeat left top / cover;
+  background: url("../images/") no-repeat left top / cover;
   min-height: 100px;
 }
 
@@ -310,10 +310,57 @@ footer {
   padding-top: 177.86%;
 }
 
+.embed-5559 {
+  padding-top: 55.59%;
+}
+
 .embed-8034 {
   padding-top: 80.34%;
 }
 
 .work-card-3 {
-  background-color: #ff5201
+  background-color: #ff5201;
+}
+
+.social-icon-t {
+  border: solid 2px #121221;
+  transition: all 0.3s ease-out;
+}
+
+.social-icon-in {
+  border: solid 2px #121221;
+  transition: all 0.3s ease-out;
+}
+
+.social-icon-f {
+  border: solid 2px #121221;
+  transition: all 0.3s ease-out;
+}
+
+.social-icon-f:hover {
+  border: solid 2px #68d7d4;
+}
+
+.social-icon-in:hover {
+  border: solid 2px #68d7d4;
+}
+
+.social-icon-t:hover {
+  border: solid 2px #68d7d4;
+}
+
+.email-link-footer {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    border: solid 2px #121221;
+    transition: all 0.3s ease-out;
+}
+
+.email-link-footer:hover {
+  border: solid 2px #68d7d4;
+}
+
+footer {
+  background-color: #121221;
 }
