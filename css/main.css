@@ -202,6 +202,11 @@ footer {
   min-height: 350px;
 }
 
+.banner-campaign {
+  background: url("../images/campaign-minto-banner.jpg") no-repeat center center / cover;
+  min-height: 350px;
+}
+
 .banner-home {
   background: url("../images/banner-home-colour.jpg") no-repeat left center / cover;
   min-height: 350px;
@@ -239,6 +244,10 @@ footer {
   padding-top: 45.35%;
 }
 
+.embed-7437 {
+  padding-top: 74.37%;
+}
+
 .hidden-s {
   display: none;
 }
@@ -263,7 +272,22 @@ footer {
   background-color: #d50e8b;
 }
 
+.work-card-2 {
+  background-color: #390969;
+}
+
 .logo-home {
   height: 8.22em;
   width: 18em;
+}
+
+.being {
+  line-height: 0.95;
+}
+
+.wrapper-wider {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60em;
+  width: 100%;
 }
