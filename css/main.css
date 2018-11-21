@@ -196,6 +196,11 @@ footer {
   min-height: 350px;
 }
 
+.banner-symbol {
+  background: url("../images/manticore-banner.jpg") no-repeat center center / cover;
+  min-height: 350px;
+}
+
 .banner-home {
   background: url("../images/banner-home-colour.jpg") no-repeat left center / cover;
   min-height: 350px;
@@ -268,6 +273,10 @@ footer {
 
 .work-card-2 {
   background-color: #390969;
+}
+
+.work-card-4 {
+  background-color: #cc1d23;
 }
 
 .logo-home {
@@ -377,4 +386,9 @@ footer {
 
 .work-card:hover .tracking{
   letter-spacing: .3em;
+}
+
+.cards-section {
+  background: url("../images/cover-coming-2.jpg") no-repeat center center / cover;
+  min-height: 350px;
 }
