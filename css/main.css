@@ -139,38 +139,22 @@ h2 {
   background-color: #121221;
 }
 
-.card-link-on-dark,
-.card-link-on-light {
+.card-link {
   text-decoration: none;
+  color: white;
+  cursor: url("../images/zh.cur"), default;
 }
 
-.card-link-on-dark:hover {
-  cursor: pointer;
-}
 
-.card-link-on-light:hover {
-  cursor: pointer;
-}
-
-.card-link-on-dark .work-card-title{
+/* .card-link-on-dark .work-card-title {
   color: #fff;
-  border-left: solid 0 #68d7d4;
   transition: all 0.5s ease-out;
 }
 
-.card-link-on-dark:hover .work-card-title {
-  border-left: solid 50px #68d7d4;
-}
-
-.card-link-on-light .work-card-title{
+.card-link-on-light .work-card-title {
   color: #fff;
-  border-left: solid 0 #68d7d4;
   transition: all 0.5s ease-out;
-}
-
-.card-link-on-light:hover .work-card-title {
-  border-left: solid 60px #68d7d4;
-}
+} */
 
 /* .banner {
   min-height: 500px;
@@ -363,4 +347,34 @@ footer {
 
 footer {
   background-color: #121221;
+}
+
+.underline {
+  position: relative;
+}
+
+.underline::after {
+  content: "";
+  background-color: white;
+  transition: all 0.3s ease-out;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: left bottom;
+}
+
+.work-card:hover .underline::after {
+  transform: scaleX(1);
+}
+
+.tracking {
+  letter-spacing: .02em;
+  transition: all 0.3s ease-out;
+}
+
+.work-card:hover .tracking{
+  letter-spacing: .3em;
 }
