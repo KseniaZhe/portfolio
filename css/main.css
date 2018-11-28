@@ -96,21 +96,6 @@ h2 {
   padding-left: .5em;
 }
 
- .helo {
-  transition: all 0.35s ease-out;
-}
-
-.business-card-bio:hover .helo {
-  color: #e52e6b;
-  margin: 0 .1em;
-}
-
-.ll {
-  display: none;
-  color: #e52e6b;
-  transition: all 1s ease-out;
-}
-
 .business-card-bio:hover .ll {
   display: inline;
 }
@@ -389,6 +374,6 @@ footer {
 }
 
 .cards-section {
-  background: url("../images/cover-coming-2.jpg") no-repeat center center / cover;
+  background: url("../images/home-bg.jpg") no-repeat center center / cover;
   min-height: 350px;
 }
