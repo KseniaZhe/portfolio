@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{page.title}} · {% endif %}Ksenia Zhelovatykh · Graphic Designer · Ottawa, Canada</title>
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="{{site.baseurl}}/css/site.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora|Tenor+Sans" rel="stylesheet">
+
+<body class="push-0 pad-b-0">
+
+  <main>
+    {{content}}
+
+    <script type="application/jd+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ksenia Zhelovatykh",
+        "jobTitle": "Graphic designer",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Ottawa",
+          "addressRegion": "ON",
+          "addressCountry": "CA",
+          "postalCode": "K1Z 8L1"
+        },
+        "email": "design@ksnz.ca",
+        "website": "https://ksnz.ca/"
+        "sameAs": [
+          "https://www.facebook.com/ksenia.zhelovatykh",
+          "https://www.instagram.com/ksenia.zh/",
+          "https://twitter.com/KseZhe",
+        ]
+      }
+    </script>
+
+  </main>
+</body>
+</html>
+
+<!-- {% if page.titleAfter %} · {{page.titleAfter}}{% endif %} -->

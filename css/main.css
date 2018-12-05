@@ -5,7 +5,7 @@ body {
 }
 
 p {
-  font-family: Cabin, sans-serif;
+  font-family: Lora, sans-serif;
 }
 
 h2 {
@@ -61,6 +61,57 @@ h2 {
 .icon-social {
   height: 36px;
   width: 36px;
+}
+
+.icon-next,
+.icon-previous {
+  height: 48px;
+  width: 84px;
+}
+.icon-arrow-next,
+.icon-arrow-previous {
+  height: 29px;
+  width: 16px;
+}
+
+.grid-next {
+  padding-top: .5em;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .icon-next,
+  .icon-previous {
+    height: 60px;
+    width: 156px;
+  }
+  .icon-arrow-next,
+  .icon-arrow-previous {
+    height: 54px;
+    width: 30px;
+  }
+
+  .grid-next {
+    padding-top: 0;
+  }
+}
+
+.next-arrow-trigger {
+  padding-right: -1em;
+  transition: all 0.2s ease-out;
+}
+
+.next-button:hover .next-arrow-trigger {
+  padding-right: 1.5em;
+}
+
+.previous-arrow-trigger {
+  padding-left: -1em;
+  transition: all 0.2s ease-out;
+}
+
+.previous-button:hover .previous-arrow-trigger {
+  padding-left: 1.5em;
 }
 
 /* .social-icon-t {
@@ -147,7 +198,7 @@ h2 {
 } */
 
 .cabin {
-  font-family: Cabin, sans-serif;
+  font-family: Lora, sans-serif;
 }
 
 .pink {
@@ -359,10 +410,6 @@ footer {
   transform-origin: left bottom;
 }
 
-.work-card:hover .underline::after {
-  transform: scaleX(1);
-}
-
 .tracking {
   letter-spacing: .02em;
   transition: all 0.3s ease-out;
@@ -372,7 +419,105 @@ footer {
   letter-spacing: .3em;
 }
 
+.work-card:hover .underline::after {
+  transform: scaleX(1);
+}
+
 .cards-section {
   background: url("../images/home-bg.jpg") no-repeat center center / cover;
   min-height: 350px;
+}
+
+.next {
+  background: url("../images/banner-next-blue.jpg") no-repeat center center / cover;
+  min-height: 90px;
+}
+
+.banner-404 {
+  background-color: #121221;
+  height: 100vh;
+}
+
+.content-404 p,
+.content-404 aside {
+  color: #fff;
+  font-family: "Tenor Sans", sans-serif;
+  width: 95%;
+}
+
+.content-404 .acqua {
+  color: #68d7d4;
+}
+
+.content-404 a {
+  color: #fff;
+}
+
+.width-404 {
+  width: 90%;
+}
+
+.wrapper-404 {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 52em;
+  width: 90%;
+}
+
+.pin-404 {
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+
+.pin-404-content {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 600px;
+}
+
+@media only screen and (min-width:60em) {
+
+  .pin-404 {
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width:38em) {
+
+  .pin-404-content {
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 600px;
+  }
+}
+
+
+
+@media only screen and (min-width: 25em) {
+
+  blockquote {
+    padding-right: 1em;
+  }
+
+}
+
+.btn-404 {
+  border: 2px solid #68d7d4;
+  background-color: inherit;
+  transition: all 0.3s ease-out;
+}
+
+.btn-404:hover {
+  border: 2px solid #121221;
+  background: url("../images/banner-next-blue.jpg") no-repeat center center / cover;
+  letter-spacing: .1em;
 }
