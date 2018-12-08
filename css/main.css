@@ -38,6 +38,10 @@ h2 {
   line-height: 0.95;
 }
 
+.nina {
+  line-height: 1;
+}
+
 .email-link {
     color: #fff;
     cursor: pointer;
@@ -45,7 +49,8 @@ h2 {
     transition: all 0.3s ease-out;
 }
 
-.email-link:hover {
+.email-link:hover,
+.email-link:focus {
     margin-left: 1.2em;
     padding: .5em 10em .5em .5em;
     color: #fff;
@@ -163,39 +168,11 @@ h2 {
   min-height: 70px;
 }
 
-.work-card-1 {
-  background-color: #121221;
-}
-
-.work-card-2,
-.work-card-3,
-.work-card-4,
-.work-card-5,
-.work-card-6 {
-  background-color: #121221;
-}
-
 .card-link {
   text-decoration: none;
   color: white;
   cursor: url("../images/zh.cur"), default;
 }
-
-
-/* .card-link-on-dark .work-card-title {
-  color: #fff;
-  transition: all 0.5s ease-out;
-}
-
-.card-link-on-light .work-card-title {
-  color: #fff;
-  transition: all 0.5s ease-out;
-} */
-
-/* .banner {
-  min-height: 500px;
-  background: url("") no-repeat 10% center / cover;
-} */
 
 .cabin {
   font-family: Lora, sans-serif;
@@ -217,33 +194,70 @@ footer {
 /* ---- branding page ---- */
 
 .banner-branding {
-  background: url("../images/branding-compactmusic-banner.jpg") no-repeat center center / cover;
+  background-image: url("../images/test-banner2.png");
+  background-color: #1e1846;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0 70px;
   min-height: 350px;
 }
 
 .banner-campaign {
-  background: url("../images/campaign-minto-banner.jpg") no-repeat center center / cover;
+  background-image: url("../images/campaign-minto-banner.jpg");
+  background-color: #533678;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0 70px;
   min-height: 350px;
 }
 
 .banner-app {
-  background: url("../images/app-hooray-banner.jpg") no-repeat center center / cover;
+  background-image: url("../images/app-hooray-banner.jpg");
+  background-color: #fb7730;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0 70px;
   min-height: 350px;
 }
 
 .banner-symbol {
-  background: url("../images/manticore-banner.jpg") no-repeat center center / cover;
+  background-image: url("../images/manticore-banner.jpg");
+  background-color: #882435;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0 70px;
   min-height: 350px;
 }
 
 .banner-home {
-  background: url("../images/banner-home-colour.jpg") no-repeat left center / cover;
-  min-height: 350px;
+  background-image: url("../images/test-banner2.png");
+  background-color: #cc1d23;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0 70px;
+  min-height: 250px;
 }
 
 .max-length-l {
   max-width: 36em;
   width: 100%;
+}
+
+.max-length-l-banner {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+@media only screen and (min-width: 60em) {
+
+  .max-length-l-banner {
+    max-width: 52em;
+  }
+
 }
 
 .max-length-l2 {
@@ -310,6 +324,10 @@ footer {
   background-color: #390969;
 }
 
+.work-card-3 {
+  background-color: #ff5201;
+}
+
 .work-card-4 {
   background-color: #cc1d23;
 }
@@ -344,10 +362,6 @@ footer {
 
 .embed-8034 {
   padding-top: 80.34%;
-}
-
-.work-card-3 {
-  background-color: #ff5201;
 }
 
 .social-icon-t {
@@ -419,13 +433,60 @@ footer {
   letter-spacing: .3em;
 }
 
+.work-card:hover .img-hover-1 {
+  border-top: solid #d50e8b 20px;
+  border-right: solid #d50e8b 20px;
+  border-left: solid #d50e8b 20px;
+  padding-bottom: 20px;
+}
+
+.img-hover-1 {
+  border: solid #d50e8b 0;
+  transition: all 0.3s ease-out;
+}
+
+.work-card:hover .img-hover-4 {
+  border-top: solid #cc1d23 20px;
+  border-right: solid #cc1d23 20px;
+  border-left: solid #cc1d23 20px;
+  padding-bottom: 20px;
+}
+
+.img-hover-4 {
+  border: solid #cc1d23 0;
+  transition: all 0.3s ease-out;
+}
+
+.work-card:hover .img-hover-3 {
+  border-top: solid #ff5201 20px;
+  border-right: solid #ff5201 20px;
+  border-left: solid #ff5201 20px;
+  padding-bottom: 20px;
+}
+
+.img-hover-3 {
+  border: solid #ff5201 0;
+  transition: all 0.3s ease-out;
+}
+
+.work-card:hover .img-hover-2 {
+  border-top: solid #390969 20px;
+  border-right: solid #390969 20px;
+  border-left: solid #390969 20px;
+  padding-bottom: 20px;
+}
+
+.img-hover-2 {
+  border: solid #390969 0;
+  transition: all 0.3s ease-out;
+}
+
 .work-card:hover .underline::after {
   transform: scaleX(1);
 }
 
-.cards-section {
-  background: url("../images/home-bg.jpg") no-repeat center center / cover;
-  min-height: 350px;
+.work-card {
+  transition: all 0.35s ease-in;
 }
 
 .next {
