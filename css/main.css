@@ -41,6 +41,10 @@ h2 {
   line-height: 0.95;
 }
 
+.mega-line {
+  line-height: 1.2;
+}
+
 .yotta {
   line-height: 1;
 }
@@ -75,17 +79,6 @@ h2 {
   width: 36px;
 }
 
-.icon-next,
-.icon-previous {
-  height: 48px;
-  width: 84px;
-}
-.icon-arrow-next,
-.icon-arrow-previous {
-  height: 29px;
-  width: 16px;
-}
-
 .grid-next {
   padding-top: .5em;
 }
@@ -108,59 +101,8 @@ h2 {
   }
 }
 
-.next-arrow-trigger {
-  padding-right: -1em;
-  transition: all 0.2s ease-out;
-}
-
-.next-button:hover .next-arrow-trigger {
-  padding-right: 1.5em;
-}
-
-.previous-arrow-trigger {
-  padding-left: -1em;
-  transition: all 0.2s ease-out;
-}
-
-.previous-button:hover .previous-arrow-trigger {
-  padding-left: 1.5em;
-}
-
-/* .social-icon-t {
-  transition: all 0.3s ease-out;
-}
-
-.social-icon-in {
-  transition: all 0.3s ease-out;
-}
-
-.social-icon-f {
-  transition: all 0.3s ease-out;
-}
-
-.social-icon-f:hover {
-  border-bottom: solid #e52e6b 5px;
-}
-
-.social-icon-in:hover {
-  border-bottom: solid #e52e6b 5px;
-}
-
-.social-icon-t:hover {
-  border-bottom: solid #e52e6b 5px;
-} */
-
 .caps {
   text-transform: uppercase;
-}
-
-.bio {
-  border-left: solid #e52e6b 3px;
-  padding-left: .5em;
-}
-
-.business-card-bio:hover .ll {
-  display: inline;
 }
 
 /* ---- home page ---- */
@@ -299,7 +241,7 @@ footer {
 /* ---- branding page ---- */
 
 .banner-branding {
-  background-image: url("../images/test-banner2.png");
+  background-image: url("../images/test-dec9-tr.png");
   background-color: #1e1846;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -308,7 +250,7 @@ footer {
 }
 
 .banner-campaign {
-  background-image: url("../images/campaign-minto-banner.jpg");
+  background-image: url("../images/banner-minto.jpg");
   background-color: #533678;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -317,7 +259,7 @@ footer {
 }
 
 .banner-app {
-  background-image: url("../images/app-hooray-banner.jpg");
+  background-image: url("../images/banner-app.png");
   background-color: #fb7730;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -326,7 +268,7 @@ footer {
 }
 
 .banner-symbol {
-  background-image: url("../images/manticore-banner.jpg");
+  background-image: url("../images/banner-manticore.png");
   background-color: #882435;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -335,11 +277,11 @@ footer {
 }
 
 .banner-home {
-  background-image: url("../images/test-banner2.png");
+  background-image: url("../images/banner-home.jpg");
   background-color: #cc1d23;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 0 70px;
+  background-position: 0 0;
   min-height: 250px;
 }
 
@@ -352,7 +294,7 @@ footer {
   position: absolute;
   width: 100%;
   left: 50%;
-  top: 75%;
+  top: 85%;
   transform: translate(-50%, -50%);
   color: #fff;
 }
@@ -365,11 +307,24 @@ footer {
   transform: translate(-50%, -50%);
 }
 
+@media only screen and (min-width: 38em) {
+
+  .max-length-l-banner {
+    top: 78%;
+  }
+
+}
+
+
 @media only screen and (min-width: 60em) {
 
   .max-length-l-banner,
   .max-length-l-banner-home {
     max-width: 52em;
+  }
+
+  .max-length-l-banner {
+    top: 75%;
   }
 
 }
@@ -506,18 +461,18 @@ footer {
 }
 
 .social-icon-f:hover {
-  border-top: solid 2px #68d7d4;
-  border-left: solid 2px #68d7d4;
+  border-top: solid 2px #f92155;
+  border-left: solid 2px #f92155;
 }
 
 .social-icon-in:hover {
-  border-top: solid 2px #68d7d4;
-  border-bottom: solid 2px #68d7d4;
+  border-top: solid 2px #f92155;
+  border-bottom: solid 2px #f92155;
 }
 
 .social-icon-t:hover {
-  border-right: solid 2px #68d7d4;
-  border-bottom: solid 2px #68d7d4;
+  border-right: solid 2px #f92155;
+  border-bottom: solid 2px #f92155;
 }
 
 .email-link-footer {
@@ -529,7 +484,7 @@ footer {
 }
 
 .email-link-footer:hover {
-  border: solid 2px #68d7d4;
+  border: solid 2px #f92155;
 }
 
 footer {
@@ -645,7 +600,7 @@ footer {
 }
 
 .content-404 .acqua {
-  color: #68d7d4;
+  color: #f92155;
 }
 
 .content-404 a {
@@ -710,13 +665,13 @@ footer {
 }
 
 .btn-404 {
-  border: 2px solid #68d7d4;
+  border: 2px solid #f92155;
   background-color: inherit;
   transition: all 0.3s ease-out;
 }
 
 .btn-404:hover {
   border: 2px solid #121221;
-  background: url("../images/banner-next-blue.jpg") no-repeat center center / cover;
+  background: url("../images/button-404.jpg") no-repeat center center / cover;
   letter-spacing: .1em;
 }
