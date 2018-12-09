@@ -4,6 +4,10 @@ body {
   font-family: "Tenor Sans", sans-serif;
 }
 
+.tenor {
+  font-family: "Tenor Sans", sans-serif;
+}
+
 p {
   font-family: Lora, sans-serif;
 }
@@ -33,9 +37,12 @@ h2 {
   line-height: 0.85;
 }
 
-.zetta,
-.yotta {
+.zetta {
   line-height: 0.95;
+}
+
+.yotta {
+  line-height: 1;
 }
 
 .nina {
@@ -163,6 +170,70 @@ h2 {
   height: 52px
 }
 
+.zh-logo {
+  width: 47px;
+  height: 52px
+}
+
+.i-prev,
+.i-next {
+  width: 25px;
+  height: 26px
+}
+
+.nav-gutter-next {
+  position: absolute;
+  left: 90%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-out;
+}
+
+.nav-gutter-next:hover {
+  position: absolute;
+  left: 92%;
+}
+
+.nav-gutter-prev {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-out;
+}
+
+.nav-gutter-prev:hover {
+  position: absolute;
+  left: 8%;
+}
+
+@media only screen and (min-width: 60em) {
+
+  .nav-gutter-next {
+    position: absolute;
+    left: 80%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .nav-gutter-prev {
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .nav-gutter-prev:hover {
+    position: absolute;
+    left: 18%;
+  }
+
+  .nav-gutter-next:hover {
+    position: absolute;
+    left: 82%;
+  }
+}
+
 .nav-bar {
   background-color: #121221;
   min-height: 70px;
@@ -172,6 +243,39 @@ h2 {
   text-decoration: none;
   color: white;
   cursor: url("../images/zh.cur"), default;
+}
+
+.nav-logo-zh {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 2s linear;
+  display: none;
+}
+
+.nav-logo-ks {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-out;
+  display: inline-block;
+  transition: all 2s linear;
+}
+
+.nav-hover:hover .nav-logo-zh {
+  display: inline-block;
+}
+
+.nav-hover:hover .nav-logo-ks {
+  display: none;
+}
+
+.nav-hover {
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 2s linear;
 }
 
 .cabin {
@@ -189,6 +293,7 @@ h2 {
 
 footer {
   min-height: 100px;
+  margin-top: 2.6rem;
 }
 
 /* ---- branding page ---- */
@@ -252,9 +357,18 @@ footer {
   color: #fff;
 }
 
+.max-length-l-banner-home {
+  position: absolute;
+  width: 100%;
+  left: 40%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @media only screen and (min-width: 60em) {
 
-  .max-length-l-banner {
+  .max-length-l-banner,
+  .max-length-l-banner-home {
     max-width: 52em;
   }
 
@@ -275,6 +389,7 @@ footer {
   color: white;
   font-family: "Tenor Sans", sans-serif;
 }
+
 
 .embed-778 {
   padding-top: 77.8%;
@@ -333,8 +448,19 @@ footer {
 }
 
 .logo-home {
-  height: 8.22em;
-  width: 18em;
+  height: 110px;
+  width: 253px;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.logo-container {
+  min-height: 250px;
 }
 
 .being {
@@ -380,15 +506,18 @@ footer {
 }
 
 .social-icon-f:hover {
-  border: solid 2px #68d7d4;
+  border-top: solid 2px #68d7d4;
+  border-left: solid 2px #68d7d4;
 }
 
 .social-icon-in:hover {
-  border: solid 2px #68d7d4;
+  border-top: solid 2px #68d7d4;
+  border-bottom: solid 2px #68d7d4;
 }
 
 .social-icon-t:hover {
-  border: solid 2px #68d7d4;
+  border-right: solid 2px #68d7d4;
+  border-bottom: solid 2px #68d7d4;
 }
 
 .email-link-footer {
@@ -431,6 +560,15 @@ footer {
 
 .work-card:hover .tracking{
   letter-spacing: .3em;
+}
+
+.why-tracking {
+  letter-spacing: .01em;
+  transition: all 0.3s ease-out;
+}
+
+.why:hover .why-tracking{
+  letter-spacing: .1em;
 }
 
 .work-card:hover .img-hover-1 {

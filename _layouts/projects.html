@@ -4,9 +4,22 @@ layout: default
 
 <nav role="navigation">
   <div class="nav-bar fixed w-1 zindex-1000">
-    <div class="pin-c">
-      <a class="inline-block" aria-label="Click to go back to home page" href="{{site.baseurl}}/">
-        <i class="icon i-logo"><img class="img-flex" src="{{site.baseurl}}/images/logo-white-ksenia.svg" alt="Logo of Ksenia Zhelovatykh"></i>
+    <div class="pin-c w-1 text-center">
+      <a class="inline-block nav-gutter-prev island" aria-label="Click to go to the previous creative project" href="{{site.baseurl}}/{{page.prev}}">
+        <i class="icon i-prev"><img class="img-flex" src="{{site.baseurl}}/images/arrow-previous.svg" alt="Logo of Ksenia Zhelovatykh"></i>
+      </a>
+      <div class="nav-hover w-1-4">
+        <a class="gutter-2 nav-logo-ks" aria-label="Click to go back to home page" href="{{site.baseurl}}/">
+          <i class="icon i-logo"><img class="img-flex" src="{{site.baseurl}}/images/logo-ksenia-zhelovatykh.svg" alt="Logo of Ksenia Zhelovatykh"></i>
+        </a>
+        <a class="gutter-2 nav-logo-zh" aria-label="Click to go back to home page" href="{{site.baseurl}}/">
+          <i class="icon zh-logo">
+            <img class="img-flex" src="{{site.baseurl}}/images/logo-ksenia-zhelovatykh-symbol.png" alt="Logo of Ksenia Zhelovatykh">
+          </i>
+        </a>
+      </div>
+      <a class="inline-block nav-gutter-next island" aria-label="Click to go to the next creative project" href="{{site.baseurl}}/{{page.next}}">
+        <i class="icon i-next"><img class="img-flex" src="{{site.baseurl}}/images/arrow-next.svg" alt="Logo of Ksenia Zhelovatykh"></i>
       </a>
     </div>
   </div>
