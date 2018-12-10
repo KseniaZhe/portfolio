@@ -8,13 +8,14 @@ body {
   font-family: "Tenor Sans", sans-serif;
 }
 
-p {
-  font-size: 95%;
+p,
+.kilo {
+  font-size: 96%;
   font-family: Lora, sans-serif;
 }
 
 h2 {
-  letter-spacing: -.04em;
+  letter-spacing: -.02em;
 }
 
 .kern-tight {
