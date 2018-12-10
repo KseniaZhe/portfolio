@@ -53,22 +53,6 @@ h2 {
   line-height: 1;
 }
 
-.email-link {
-    color: #fff;
-    cursor: pointer;
-    text-decoration: none;
-    transition: all 0.3s ease-out;
-}
-
-.email-link:hover,
-.email-link:focus {
-    margin-left: 1.2em;
-    padding: .5em 10em .5em .5em;
-    color: #fff;
-    background-color: #e52e6b;
-    border-bottom: solid #e52e6b 40px;
-}
-
 .cover {
   background: url("../images/cover-coming.jpg") no-repeat left top / cover;
   min-height: 100vh;
@@ -131,7 +115,8 @@ h2 {
   transition: all 0.3s ease-out;
 }
 
-.nav-gutter-next:hover {
+.nav-gutter-next:hover,
+.nav-gutter-next:focus {
   position: absolute;
   left: 92%;
 }
@@ -144,7 +129,8 @@ h2 {
   transition: all 0.3s ease-out;
 }
 
-.nav-gutter-prev:hover {
+.nav-gutter-prev:hover,
+.nav-gutter-prev:focus {
   position: absolute;
   left: 8%;
 }
@@ -165,12 +151,14 @@ h2 {
     transform: translate(-50%, -50%);
   }
 
-  .nav-gutter-prev:hover {
+  .nav-gutter-prev:hover,
+  .nav-gutter-prev:focus {
     position: absolute;
     left: 18%;
   }
 
-  .nav-gutter-next:hover {
+  .nav-gutter-next:hover,
+  .nav-gutter-next:focus {
     position: absolute;
     left: 82%;
   }
@@ -190,10 +178,11 @@ h2 {
 .nav-logo-zh {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: -3em;
+  width: 100%;
   transform: translate(-50%, -50%);
-  transition: all 2s linear;
   display: none;
+  transition: all 0.3s ease-in;
 }
 
 .nav-logo-ks {
@@ -201,17 +190,18 @@ h2 {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  transition: all 0.3s ease-out;
+  transition: all 0.3s linear;
   display: inline-block;
-  transition: all 2s linear;
 }
 
 .nav-hover:hover .nav-logo-zh {
   display: inline-block;
+  top: 50%;
 }
 
 .nav-hover:hover .nav-logo-ks {
   display: none;
+  top: -3em;
 }
 
 .nav-hover {
@@ -227,7 +217,6 @@ h2 {
 .pink {
   color: #e52e6b
 }
-
 
 .minh-252px {
   min-height: 252px;
@@ -460,17 +449,20 @@ footer {
   transition: all 0.3s ease-out;
 }
 
-.social-icon-f:hover {
+.social-icon-f:hover,
+.social-icon-f:focus {
   border-top: solid 2px #f92155;
   border-left: solid 2px #f92155;
 }
 
-.social-icon-in:hover {
+.social-icon-in:hover,
+.social-icon-in:focus {
   border-top: solid 2px #f92155;
   border-bottom: solid 2px #f92155;
 }
 
-.social-icon-t:hover {
+.social-icon-t:hover,
+.social-icon-t:focus {
   border-right: solid 2px #f92155;
   border-bottom: solid 2px #f92155;
 }
@@ -483,7 +475,8 @@ footer {
     transition: all 0.3s ease-out;
 }
 
-.email-link-footer:hover {
+.email-link-footer:hover,
+.email-link-footer:focus {
   border: solid 2px #f92155;
 }
 
@@ -513,7 +506,8 @@ footer {
   transition: all 0.3s ease-out;
 }
 
-.work-card:hover .tracking{
+.work-card:hover .tracking,
+.card-link:focus .tracking {
   letter-spacing: .3em;
 }
 
@@ -522,11 +516,13 @@ footer {
   transition: all 0.3s ease-out;
 }
 
-.why:hover .why-tracking{
+.why:hover .why-tracking,
+.why:focus .why-tracking {
   letter-spacing: .1em;
 }
 
-.work-card:hover .img-hover-1 {
+.work-card:hover .img-hover-1,
+.card-link:focus .img-hover-1 {
   border-top: solid #d50e8b 20px;
   border-right: solid #d50e8b 20px;
   border-left: solid #d50e8b 20px;
@@ -538,7 +534,8 @@ footer {
   transition: all 0.3s ease-out;
 }
 
-.work-card:hover .img-hover-4 {
+.work-card:hover .img-hover-4,
+.card-link:focus .img-hover-4 {
   border-top: solid #cc1d23 20px;
   border-right: solid #cc1d23 20px;
   border-left: solid #cc1d23 20px;
@@ -550,7 +547,8 @@ footer {
   transition: all 0.3s ease-out;
 }
 
-.work-card:hover .img-hover-3 {
+.work-card:hover .img-hover-3,
+.card-link:focus .img-hover-3 {
   border-top: solid #ff5201 20px;
   border-right: solid #ff5201 20px;
   border-left: solid #ff5201 20px;
@@ -562,7 +560,8 @@ footer {
   transition: all 0.3s ease-out;
 }
 
-.work-card:hover .img-hover-2 {
+.work-card:hover .img-hover-2,
+.card-link:focus .img-hover-2 {
   border-top: solid #390969 20px;
   border-right: solid #390969 20px;
   border-left: solid #390969 20px;
@@ -574,7 +573,8 @@ footer {
   transition: all 0.3s ease-out;
 }
 
-.work-card:hover .underline::after {
+.work-card:hover .underline::after,
+.card-link:focus .underline::after {
   transform: scaleX(1);
 }
 
@@ -654,8 +654,6 @@ footer {
   }
 }
 
-
-
 @media only screen and (min-width: 25em) {
 
   blockquote {
@@ -670,8 +668,21 @@ footer {
   transition: all 0.3s ease-out;
 }
 
-.btn-404:hover {
+.btn-404:hover,
+.btn-404:focus {
   border: 2px solid #121221;
   background: url("../images/button-404.jpg") no-repeat center center / cover;
   letter-spacing: .1em;
+}
+
+a:focus,
+[tabindex="0"]:focus,
+details:focus,
+summary:focus,
+input:focus,
+textarea:focus,
+button:focus,
+select:focus {
+  outline: 2px solid #f92155;
+  outline-offset: 0;
 }
