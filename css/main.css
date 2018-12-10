@@ -9,6 +9,7 @@ body {
 }
 
 p {
+  font-size: 95%;
   font-family: Lora, sans-serif;
 }
 
@@ -50,7 +51,16 @@ h2 {
 }
 
 .nina {
+  font-size: 2.35rem;
   line-height: 1;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .nina {
+    font-size: 4.2998rem;
+  }
+
 }
 
 .cover {
