@@ -227,6 +227,23 @@ footer {
   margin-top: 2.6rem;
 }
 
+.nav-footer a {
+  color: #fff;
+  text-decoration: none;
+  border: solid 2px #121221;
+  transition: all 0.3s ease-out;
+}
+
+.home:hover ,
+.home:focus {
+  border-bottom: solid 2px #f92155;
+}
+
+.top:hover ,
+.top:focus {
+  border-top: solid 2px #f92155;
+}
+
 /* ---- branding page ---- */
 
 .banner-branding {
